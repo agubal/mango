@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net46": {
+      "wrappedProject": "../../Mango.Common/Mango.Common.csproj",
+      "bin": {
+        "assembly": "../../Mango.Common/obj/{configuration}/Mango.Common.dll",
+        "pdb": "../../Mango.Common/obj/{configuration}/Mango.Common.pdb"
+      },
+      "dependencies": {
+        "EntityFramework": "6.1.3"
+      }
+    },
+    "net461": {
+      "wrappedProject": "../../Mango.Common/Mango.Common.csproj",
+      "bin": {
+        "assembly": "../../Mango.Common/obj/{configuration}/Mango.Common.dll",
+        "pdb": "../../Mango.Common/obj/{configuration}/Mango.Common.pdb"
+      },
+      "dependencies": {
+        "EntityFramework": "6.1.3"
+      }
+    }
+  }
+}

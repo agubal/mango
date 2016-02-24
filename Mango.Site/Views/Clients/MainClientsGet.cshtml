@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Mango.Entities.Models.ClientModel>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Some of Our Clients</h2>
+    </div>
+</div>
+
+<div class="row client">
+    @foreach (var client in Model)
+    {
+        <div class="col-md-3">
+            <img style="background-image: url('@client.Photo')" src="/Content/transparent.png"/>
+@*            <img src="@client.Photo" class="thumbnail"/>*@
+        </div>
+    }
+</div>

@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DF252C72-A495-4066-A0AD-8F2E285520BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{333D0485-56D1-472B-B1F3-1F15B5A3F9A6}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Entities", "Mango.Entities\Mango.Entities.csproj", "{D12E6030-F09A-4C5F-B6DD-5DBC76CA6B12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.BLL", "Mango.BLL\Mango.BLL.csproj", "{2F39E4F4-F9B0-4A92-811D-905B9DF90C71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.DAL", "Mango.DAL\Mango.DAL.csproj", "{FA1DBF35-50B7-4C4F-B9E4-ACA8F6432AC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Common", "Mango.Common\Mango.Common.csproj", "{A871A9BA-9682-48D1-A93E-436EAB540585}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Dependencies", "Mango.Dependencies\Mango.Dependencies.csproj", "{EBAA54FC-479D-41E3-A7F5-1AEB47B917ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Site", "Mango.Site\Mango.Site.csproj", "{AFCF6D69-2109-4FF2-A086-503DA004AFA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D12E6030-F09A-4C5F-B6DD-5DBC76CA6B12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D12E6030-F09A-4C5F-B6DD-5DBC76CA6B12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D12E6030-F09A-4C5F-B6DD-5DBC76CA6B12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D12E6030-F09A-4C5F-B6DD-5DBC76CA6B12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F39E4F4-F9B0-4A92-811D-905B9DF90C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F39E4F4-F9B0-4A92-811D-905B9DF90C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F39E4F4-F9B0-4A92-811D-905B9DF90C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F39E4F4-F9B0-4A92-811D-905B9DF90C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA1DBF35-50B7-4C4F-B9E4-ACA8F6432AC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA1DBF35-50B7-4C4F-B9E4-ACA8F6432AC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA1DBF35-50B7-4C4F-B9E4-ACA8F6432AC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA1DBF35-50B7-4C4F-B9E4-ACA8F6432AC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A871A9BA-9682-48D1-A93E-436EAB540585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A871A9BA-9682-48D1-A93E-436EAB540585}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A871A9BA-9682-48D1-A93E-436EAB540585}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A871A9BA-9682-48D1-A93E-436EAB540585}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBAA54FC-479D-41E3-A7F5-1AEB47B917ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBAA54FC-479D-41E3-A7F5-1AEB47B917ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBAA54FC-479D-41E3-A7F5-1AEB47B917ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBAA54FC-479D-41E3-A7F5-1AEB47B917ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFCF6D69-2109-4FF2-A086-503DA004AFA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFCF6D69-2109-4FF2-A086-503DA004AFA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFCF6D69-2109-4FF2-A086-503DA004AFA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFCF6D69-2109-4FF2-A086-503DA004AFA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D12E6030-F09A-4C5F-B6DD-5DBC76CA6B12} = {DF252C72-A495-4066-A0AD-8F2E285520BD}
+		{2F39E4F4-F9B0-4A92-811D-905B9DF90C71} = {DF252C72-A495-4066-A0AD-8F2E285520BD}
+		{FA1DBF35-50B7-4C4F-B9E4-ACA8F6432AC4} = {DF252C72-A495-4066-A0AD-8F2E285520BD}
+		{A871A9BA-9682-48D1-A93E-436EAB540585} = {DF252C72-A495-4066-A0AD-8F2E285520BD}
+		{EBAA54FC-479D-41E3-A7F5-1AEB47B917ED} = {DF252C72-A495-4066-A0AD-8F2E285520BD}
+		{AFCF6D69-2109-4FF2-A086-503DA004AFA5} = {DF252C72-A495-4066-A0AD-8F2E285520BD}
+	EndGlobalSection
+EndGlobal

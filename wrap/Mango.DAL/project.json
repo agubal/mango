@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net461": {
+      "wrappedProject": "../../Mango.DAL/Mango.DAL.csproj",
+      "bin": {
+        "assembly": "../../Mango.DAL/obj/{configuration}/Mango.DAL.dll",
+        "pdb": "../../Mango.DAL/obj/{configuration}/Mango.DAL.pdb"
+      },
+      "dependencies": {
+        "EntityFramework": "6.1.3",
+        "Microsoft.AspNet.Identity.Core": "2.2.1",
+        "Microsoft.AspNet.Identity.EntityFramework": "2.2.1",
+        "Mango.Common": "1.0.0-*",
+        "Mango.Entities": "1.0.0-*"
+      }
+    }
+  }
+}
