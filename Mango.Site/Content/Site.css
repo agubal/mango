@@ -31,3 +31,7 @@ textarea {
     width: 190px;
     background-repeat: no-repeat;
 }
+
+.widget {
+    margin: 20px 0;
+}

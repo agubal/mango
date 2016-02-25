@@ -1,0 +1,63 @@
+﻿@model Mango.Entities.Models.MessageModel
+
+<div class="row widget" style="background-color: #87cefa; padding: 0 30px;">
+    <div class="col-md-8">
+        <h3>Contact us</h3>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="row form-horizontal">
+
+                @Html.ValidationSummary(true, "", new {@class = "text-danger"})
+
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="form-group col-md-5">
+                            @Html.LabelFor(model => model.Name):
+                            @Html.EditorFor(model => model.Name, new {htmlAttributes = new {@class = "form-control"}})
+                            @Html.ValidationMessageFor(model => model.Name, "", new {@class = "text-danger"})
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="form-group col-md-5">
+                            @Html.LabelFor(model => model.Contact):
+                            @Html.EditorFor(model => model.Contact, new {htmlAttributes = new {@class = "form-control"}})
+                            @Html.ValidationMessageFor(model => model.Contact, "", new {@class = "text-danger"})
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.MessageBody):
+                        @Html.TextAreaFor(model => model.MessageBody, 10, 190, new {htmlAttributes = new {@class = "form-control"}})
+                        @Html.ValidationMessageFor(model => model.MessageBody, "", new {@class = "text-danger"})
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Create" class="btn btn-default"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Call us</h3>
+            </div>
+            <div class="col-md-12">
+                <b>UK, London</b><br />
+                +44 20 351 416 15
+            </div>
+            <div class="col-md-12">
+                <b>Ukraine, Kiev</b><br />
+                +38 095 465 79 66
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -65,8 +65,32 @@
     </a>
 </div>
 
+
+
+
 @{
     Html.RenderAction("MainServicesGet", "Services");
+}
+
+<div class="row" style="background-color: ghostwhite">
+    <div class="col-md-12">
+        <h2>About Us</h2>
+    </div>
+    <div class="col-md-12 text-justify">
+        <p>
+            We are Daxx. We help you add experienced developers to your in-house team through remote collaboration and relocation.
+            Our company was founded in 1999 in Amsterdam by Bart Kuyper and Jeroen Rijnen.
+            Today Daxx operates offices in Kiev, Dnepropetrovsk, Kharkov, Ternopyl, St. Petersburg, Chisnau, New York, and London in addition to our headquarters in Amsterdam.
+            We have established dedicated client teams with over 220 developers for more than 100 clients.
+            Our mission is to connect businesses with great software developers, quality assurance testers, HTML coders, business analysts, and any other IT professional our clients need.
+        </p>
+    </div>
+</div>
+
+@{
     Html.RenderAction("MainClientsGet", "Clients");
+}
+@{
+    Html.RenderAction("Create", "Message");
 }
 

@@ -1,14 +1,19 @@
 ﻿@model IEnumerable<Mango.Entities.Models.ServiceModel>
 
-<div class="row">
+<div class="row widget">
     @foreach (var service in Model)
     {
         <div class="col-md-3">
             <div class="row">
-                <div class="col-md-12"><h2>@service.Name</h2></div>
-                <div class="col-md-12">@Html.Raw(service.ShortDescription)</div>
-                <div class="col-md-12">@Html.ActionLink("More", "Details", "Services", new {id = service.Id}, new {@class= "btn btn-default" })</div>
-            </div>         
+                <div class="col-md-12">
+                    <h2>@service.Name</h2>
+                </div>
+                <div class="col-md-12 text-justify">@Html.Raw(service.ShortDescription)</div>
+                <div class="col-md-12">@Html.ActionLink("More", "Details", "Services", new {id = service.Id}, new {@class = "btn btn-default"})</div>
+            </div>
         </div>
     }
 </div>
+
+
+

@@ -93,10 +93,12 @@
   <ItemGroup>
     <Compile Include="Domain\Client.cs" />
     <Compile Include="Domain\Entity.cs" />
+    <Compile Include="Domain\Message.cs" />
     <Compile Include="Domain\Service.cs" />
     <Compile Include="Domain\Technology.cs" />
     <Compile Include="Domain\User.cs" />
     <Compile Include="Models\ClientModel.cs" />
+    <Compile Include="Models\MessageModel.cs" />
     <Compile Include="Models\ServiceModel.cs" />
     <Compile Include="Models\TechnologyModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

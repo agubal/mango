@@ -11,6 +11,7 @@ namespace Mango.Dependencies.Mapping
             Mapper.CreateMap<Client, ClientModel>().ReverseMap();
             Mapper.CreateMap<Technology, TechnologyModel>().ReverseMap();
             Mapper.CreateMap<Service, ServiceModel>().ReverseMap();
+            Mapper.CreateMap<Message, MessageModel>().ReverseMap();
         }
     }
 }
