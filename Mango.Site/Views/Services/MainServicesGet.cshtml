@@ -1,4 +1,7 @@
 ﻿@model IEnumerable<Mango.Entities.Models.ServiceModel>
+@{
+    Layout = null;
+}
 
 <div class="row widget">
     @foreach (var service in Model)
@@ -9,11 +12,34 @@
                     <h2>@service.Name</h2>
                 </div>
                 <div class="col-md-12 text-justify">@Html.Raw(service.ShortDescription)</div>
-                <div class="col-md-12">@Html.ActionLink("More", "Details", "Services", new {id = service.Id}, new {@class = "btn btn-default"})</div>
+                @{
+                    string actionName = String.Empty;
+                    switch (service.Id)
+                    {
+                        case 1:
+                        case 2:
+                            actionName = "YourDevelopmentTeam"; break;
+                        case 3: actionName = "ApplicationsDevelopment"; break;
+                    }
+                                }
+                <div class="col-md-12">@Html.ActionLink("More", @actionName, "Services", null, new { @class = "btn btn-default" })</div>
             </div>
         </div>
-    }
+                    }
+    <div class="col-md-3">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Software Quality Assurance</h2>
+            </div>
+            <div class="col-md-12 text-justify">
+                <ul>
+                    <li>@Html.ActionLink("Independent Testing ", "Details", "Services", new { @id = 6 }, null)</li>
+                    <li>@Html.ActionLink("Test Automation", "Details", "Services", new { @id = 5 }, null)</li>
+                    <li>@Html.ActionLink("Application Security Testing", "Details", "Services", new { @id = 7 }, null)</li>
+                    <li>@Html.ActionLink("Load Testing", "Details", "Services", new { @id = 8 }, null)</li>
+                </ul>
+            </div>
+            <div class="col-md-12">@Html.ActionLink("More", "SoftwareQualityAssurance", "Services", null, new { @class = "btn btn-default" })</div>
+        </div>
+    </div>
 </div>
-
-
-

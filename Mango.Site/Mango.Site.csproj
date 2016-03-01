@@ -244,6 +244,14 @@
     <Content Include="Content\images\ASP-NET-Banners-02.png" />
     <Content Include="Content\images\Banner-01-Azure.png" />
     <Content Include="Content\images\Banner-02-VS.png" />
+    <Content Include="Content\images\slide1.png" />
+    <Content Include="Content\images\slide2.png" />
+    <Content Include="Content\images\slide3.png" />
+    <Content Include="Content\images\social\facebook.png" />
+    <Content Include="Content\images\social\google.png" />
+    <Content Include="Content\images\social\linkedin.png" />
+    <Content Include="Content\images\social\twitter.png" />
+    <Content Include="Content\images\tecwi-logo.png" />
     <Content Include="Content\transparent.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -309,6 +317,14 @@
     <Content Include="Views\Services\MainServicesGet.cshtml" />
     <Content Include="Views\Clients\MainClientsGet.cshtml" />
     <Content Include="Views\Message\Create.cshtml" />
+    <Content Include="Views\Home\Careers.cshtml" />
+    <Content Include="Views\Home\Clients.cshtml" />
+    <Content Include="Views\Home\Offices.cshtml" />
+    <Content Include="Views\Home\WhyTecwi.cshtml" />
+    <Content Include="Views\Services\YourDevelopmentTeam.cshtml" />
+    <Content Include="Views\Services\ApplicationsDevelopment.cshtml" />
+    <Content Include="Views\Services\SoftwareQualityAssurance.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -24,7 +24,8 @@ namespace Mango.Site
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrap.min.css",
+//                      "~/Content/bootstrap-theme.min.css",
                       "~/Content/site.css"));
         }
     }

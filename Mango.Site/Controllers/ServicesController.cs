@@ -91,5 +91,20 @@ namespace Mango.Site.Controllers
             var models = Mapper.Map<List<ServiceModel>>(services);
             return PartialView(models);
         }
+
+        public ActionResult YourDevelopmentTeam()
+        {
+            return View();
+        }
+
+        public ActionResult ApplicationsDevelopment()
+        {
+            return View();
+        }
+
+        public ActionResult SoftwareQualityAssurance()
+        {
+            return View();
+        }
     }
 }
