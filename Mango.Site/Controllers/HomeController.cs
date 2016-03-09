@@ -35,9 +35,5 @@ namespace Mango.Site.Controllers
             return View();
         }
 
-        public ActionResult Offices()
-        {
-            return View();
-        }
     }
 }
