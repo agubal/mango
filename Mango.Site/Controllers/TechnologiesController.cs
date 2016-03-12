@@ -1,4 +1,7 @@
-﻿using System.Web.Mvc;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Web.Mvc;
+using AutoMapper;
 using Mango.BLL;
 using Mango.Entities.Domain;
 using Mango.Entities.Models;
@@ -8,8 +11,10 @@ namespace Mango.Site.Controllers
     [Authorize]
     public class TechnologiesController : BaseMvcController<Technology, TechnologyModel>
     {
+        private readonly IService<Technology> _technologyService;
         public TechnologiesController(IService<Technology> entityService) : base(entityService)
         {
+            _technologyService = entityService;
         }
 
         public ActionResult Index()
@@ -78,6 +83,13 @@ namespace Mango.Site.Controllers
             {
                 return View();
             }
+        }
+
+        public ActionResult MainTechnologiesGet()
+        {
+            List<Technology> techs = _technologyService.Filter(g => g.IsMain).OrderBy(g => g.Order).ToList();
+            var models = Mapper.Map<List<TechnologyModel>>(techs);
+            return PartialView(models);
         }
     }
 }

@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Mango.Entities.Models.TechnologyModel>
+@{
+    Layout = null;
+}
+
+<div class="row tech block">
+    <div class="col-md-12">
+        <h2>Some of Our Expertise</h2>
+    </div>
+    @foreach (var client in Model)
+    {
+        <div class="col-md-2">
+            <img style="background-image: url('@client.Photo')" src="/Content/transparent.png"/>
+        </div>
+    }
+</div>

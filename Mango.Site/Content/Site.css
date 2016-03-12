@@ -32,6 +32,19 @@ textarea {
     background-repeat: no-repeat;
 }
 
+.tech img {
+    background-position: center center;
+    background-size: contain;
+    max-height: 70px;
+    width: 130px;
+    background-repeat: no-repeat;
+}
+
+.block {
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
 .widget {
     margin: 20px 0;
     padding: 0 30px;
