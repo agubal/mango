@@ -249,6 +249,7 @@
     <Content Include="Content\images\loupe.png" />
     <Content Include="Content\images\Me.png" />
     <Content Include="Content\images\outsource.png" />
+    <Content Include="Content\images\puzzle.png" />
     <Content Include="Content\images\Services.png" />
     <Content Include="Content\images\slide1.png" />
     <Content Include="Content\images\slide2.png" />
