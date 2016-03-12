@@ -32,7 +32,14 @@
             @Html.DisplayFor(modelItem => item.Name)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Photo)
+            @if (!string.IsNullOrWhiteSpace(item.Photo))
+            {
+                <img src="@item.Photo" alt="@item.Photo" />
+            }
+            else
+            {
+                @Html.DisplayFor(modelItem => item.Photo)
+            }
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.IsMain)

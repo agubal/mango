@@ -258,6 +258,21 @@
     <Content Include="Content\images\social\linkedin.png" />
     <Content Include="Content\images\social\twitter.png" />
     <Content Include="Content\images\team.png" />
+    <Content Include="Content\images\tech\prod\android.png" />
+    <Content Include="Content\images\tech\prod\angularjs.png" />
+    <Content Include="Content\images\tech\prod\azure.png" />
+    <Content Include="Content\images\tech\prod\grant.png" />
+    <Content Include="Content\images\tech\prod\html5.png" />
+    <Content Include="Content\images\tech\prod\ios.png" />
+    <Content Include="Content\images\tech\prod\java.png" />
+    <Content Include="Content\images\tech\prod\mongodb.png" />
+    <Content Include="Content\images\tech\prod\net.png" />
+    <Content Include="Content\images\tech\prod\node.png" />
+    <Content Include="Content\images\tech\prod\python.png" />
+    <Content Include="Content\images\tech\prod\sitecore.png" />
+    <Content Include="Content\images\tech\prod\sitefinity.png" />
+    <Content Include="Content\images\tech\prod\unity3d.png" />
+    <Content Include="Content\images\tech\prod\xamarin.png" />
     <Content Include="Content\images\tecwi-logo.png" />
     <Content Include="Content\images\Ukraine_map.png" />
     <Content Include="Content\images\UK_map.png" />
@@ -336,6 +351,7 @@
     <Content Include="Views\Services\ApplicationsDevelopment.cshtml" />
     <Content Include="Views\Services\SoftwareQualityAssurance.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Technologies\MainTechnologiesGet.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
