@@ -7,46 +7,41 @@
 <div class="row conact-form color-white">
     <div class="col-md-8">
         <h3>Contact us</h3>
-        @using (Html.BeginForm())
-        {
-            @Html.AntiForgeryToken()
 
-            <div class="row form-horizontal">
+        <div class="row form-horizontal">
 
-                @Html.ValidationSummary(true, "", new {@class = "text-danger"})
-
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="form-group col-md-5">
-                            @Html.LabelFor(model => model.Name):
-                            @Html.EditorFor(model => model.Name, new {htmlAttributes = new {@class = "form-control"}})
-                            @Html.ValidationMessageFor(model => model.Name, "", new {@class = "text-danger"})
-                        </div>
-                        <div class="col-md-2"></div>
-                        <div class="form-group col-md-5">
-                            @Html.LabelFor(model => model.Contact):
-                            @Html.EditorFor(model => model.Contact, new {htmlAttributes = new {@class = "form-control"}})
-                            @Html.ValidationMessageFor(model => model.Contact, "", new {@class = "text-danger"})
-                        </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="form-group col-md-5">
+                        @Html.LabelFor(model => model.Name):
+                        <input id="name" type="text" class="form-control" />
                     </div>
-
-                </div>
-                <div class="col-md-12">
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.MessageBody):
-                        @Html.TextAreaFor(model => model.MessageBody, 10, 190, new {htmlAttributes = new {@class = "form-control"}})
-                        @Html.ValidationMessageFor(model => model.MessageBody, "", new {@class = "text-danger"})
+                    <div class="col-md-2"></div>
+                    <div class="form-group col-md-5">
+                        @Html.LabelFor(model => model.Contact):
+                        <input id="contact" type="text" class="form-control" />
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <div class="col-md-offset-2 col-md-10">
-                            <input type="submit" value="Create" class="btn btn-default"/>
-                        </div>
-                    </div>
+
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.MessageBody):
+                    <textarea rows="10" cols="190" class="form-control" id="messageBody"></textarea>
                 </div>
             </div>
-        }
+            <div class="col-md-12">
+                <div class="form-group">
+                    <button id="send" class="btn btn-default" style="background-color: #d34b17; color: #fff">
+                        <span class="glyphicon glyphicon-envelope" style="color: #fff" aria-hidden="true"></span>
+                          Let's grow together!
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" id="thankYouMsg">Thank you for contacting us!</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-4">
         <div class="row">
@@ -64,4 +59,29 @@
         </div>
     </div>
 </div>
+@Scripts.Render("~/bundles/jquery")
+<script>
+    $(document).ready(function () {
+        $("#thankYouMsg").hide();
+
+        $("#send").on('click', function () {
+            var name = $("#name").val();
+            var contact = $("#contact").val();
+            var messageBody = $("#messageBody").val();
+            var mail = {
+                SenderName: name,
+                SenderContactDetails: contact,
+                Message: messageBody
+            };
+
+            $.post('/home/ContactUs', mail, function () {
+                $("#thankYouMsg").show();
+            });
+        });
+
+    });
+</script>
+
+
+
 

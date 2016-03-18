@@ -3,30 +3,35 @@
     Layout = null;
 }
 
-<div class="row" style="background-color: whitesmoke">
+<div class="row" >
     @foreach (var service in Model)
     {
-        <div class="col-md-3">
+        <div class="col-md-4 service-block">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 text-center" style="background-color: #d34b17; color: #fff">
                     <h2>@service.Name</h2>
                 </div>
-                <div class="col-md-12 text-justify">@Html.Raw(service.ShortDescription)</div>
-                @{
-                    string actionName = String.Empty;
-                    switch (service.Id)
-                    {
-                        case 1:
-                        case 2:
-                            actionName = "YourDevelopmentTeam"; break;
-                        case 3: actionName = "ApplicationsDevelopment"; break;
+                    <div class="col-md-12 text-justify" >@Html.Raw(service.ShortDescription)</div>
+                    @{
+                        string actionName = String.Empty;
+                        switch (service.Id)
+                        {
+                            case 1:
+                            case 2:
+                                actionName = "YourDevelopmentTeam";
+                                break;
+                            case 3:
+                                actionName = "ApplicationsDevelopment";
+                                break;
+                        }
                     }
-                                }
-                <div class="col-md-12">@Html.ActionLink("More", @actionName, "Services", null, new { @class = "btn btn-default" })</div>
+                </div>
+            <div class="row">
+                <div class="col-md-12 active">@Html.ActionLink("More >>", @actionName, "Services", null, new { @class = "btn btn-default" })</div>
             </div>
         </div>
                     }
-    <div class="col-md-3">
+   @* <div class="col-md-4 service-block">
         <div class="row">
             <div class="col-md-12">
                 <h2>Software Quality Assurance</h2>
@@ -39,7 +44,8 @@
                     <li>@Html.ActionLink("Load Testing", "Details", "Services", new { @id = 8 }, null)</li>
                 </ul>
             </div>
-            <div class="col-md-12">@Html.ActionLink("More", "SoftwareQualityAssurance", "Services", null, new { @class = "btn btn-default" })</div>
+            <div class="col-md-12 active">@Html.ActionLink("More >>", "SoftwareQualityAssurance", "Services", null, new { @class = "btn btn-default" })</div>
         </div>
+        </div>
+    </div>*@
     </div>
-</div>

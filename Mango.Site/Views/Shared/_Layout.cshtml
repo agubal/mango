@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <div class="navbar navbar-default navbar-static-top" style="margin-top:0">
+    <div class="navbar navbar-default navbar-static-top" style="margin-top: 0">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -19,7 +19,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="@Url.Action("Index", "Home")" class="logo">
-                    <img src="~/Content/images/tecwi-logo.png" alt="Tecwi"/>
+                    <img src="~/Content/images/tecwi-logo.png" alt="Tecwi" />
                 </a>
             </div>
 
@@ -32,7 +32,7 @@
                             <li role="separator" class="divider"></li>
                             <li>@Html.ActionLink("Your development team in our offices", "YourDevelopmentTeam", "Services")</li>
                         </ul>
-                    </li>                  
+                    </li>
                     <li>@Html.ActionLink("Application development", "ApplicationsDevelopment", "Services")</li>
                     <li>@Html.ActionLink("Quality Assurance", "SoftwareQualityAssurance", "Services")</li>
                     <li>@Html.ActionLink("Why Tecwi", "WhyTecwi", "Home")</li>
@@ -42,17 +42,16 @@
                 </ul>
             </div>
         </div>
-                    
-        
-    </div>
-<div class="body-content container">
-    @RenderBody()
-    @Html.Partial("_Footer")
-</div>
-    
 
+
+    </div>
+    <div class="body-content container">
+        @RenderBody()
+        @Html.Partial("_Footer")
+    </div>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
 </body>
 </html>
+
+

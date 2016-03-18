@@ -2,6 +2,7 @@
 using AutoMapper;
 using Mango.BLL;
 using Mango.BLL.Identity;
+using Mango.BLL.Mails;
 using Mango.Common;
 using Mango.DAL.Core;
 using Mango.DAL.Repo;
@@ -44,6 +45,10 @@ namespace Mango.Dependencies.StructureMap
             //Generics:
             For(typeof(IRepository<>)).Use(typeof(GenericRepository<>));
             For(typeof(IService<>)).Use(typeof(GenericService<>));
+
+            //Services:
+            For(typeof(IMailService)).Use(typeof(MailService));
+
         }
     }
 }

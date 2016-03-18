@@ -92,6 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Domain\Client.cs" />
+    <Compile Include="Domain\EmailItem.cs" />
     <Compile Include="Domain\Entity.cs" />
     <Compile Include="Domain\Message.cs" />
     <Compile Include="Domain\Service.cs" />

@@ -18,5 +18,7 @@ namespace Mango.DAL.Core
         public IDbSet<Client> Clients { get; set; }
         public IDbSet<Technology> Technologies { get; set; }
         public IDbSet<Service> Services { get; set; }
+        public IDbSet<EmailItem> Emails { get; set; }
+
     }
 }

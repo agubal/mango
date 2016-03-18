@@ -82,6 +82,10 @@
     <Compile Include="Migrations\201602232029011_Migration2.Designer.cs">
       <DependentUpon>201602232029011_Migration2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201603171702320_MigrationEmails.cs" />
+    <Compile Include="Migrations\201603171702320_MigrationEmails.Designer.cs">
+      <DependentUpon>201603171702320_MigrationEmails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repo\GenericRepository.cs" />
@@ -98,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201602232029011_Migration2.resx">
       <DependentUpon>201602232029011_Migration2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603171702320_MigrationEmails.resx">
+      <DependentUpon>201603171702320_MigrationEmails.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
