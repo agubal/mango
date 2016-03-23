@@ -13,15 +13,15 @@
             <img src="/Content/images/slide2.png" alt="ASP.NET" class="img-responsive" />
             <div class="carousel-caption slide-text">
                 <p>
-                    <h2 >Our services</h2>
+                    <h2>Our services</h2>
                     <ul>
                         <li>Dedicated Development Team</li>
                         <li>Custom Product Development</li>
                         <li>Software Quality Assurance</li>
                     </ul>
 
-                        @Html.ActionLink("Learn more", "MainServicesGet", "Services", null, new { @class = "btn btn-default", @style = "background-color: #d34b17;  color: #fff" })
-</p>
+                    @Html.ActionLink("Learn more", "Index", "Services", null, new { @class = "btn btn-default", @style = "background-color: #d34b17;  color: #fff" })
+                </p>
             </div>
         </div>
         <div class="item">
@@ -49,7 +49,7 @@
                         <li>We are the ledder to your growth and transformation</li>
                         <li>We bring you cost improvement - up to 50% saving</li>
                         <li>Flexible, output-based pricing models, scaling up or down easily</li>
-</ul>
+                    </ul>
                     @Html.ActionLink("Learn more", "WhyTecwi", "Home", null, new { @class = "btn btn-default btn-default", @style = "background-color: #d34b17;  color: #fff" })
                 </p>
             </div>
@@ -68,28 +68,28 @@
 @{
     Html.RenderAction("MainServicesGet", "Services");
 }
-
+<hr/>
 @{
     Html.RenderAction("MainTechnologiesGet", "Technologies");
 }
-
-<div class="row">
-    <div class="col-md-12 corporate-color-brown" >
+<hr />
+<div class="row block">
+    <div class="col-md-12 corporate-color-brown">
         <h2>We are Tecwi</h2>
     </div>
     <div class="col-md-12 text-justify">
         <p>
             Young and dynamic custom software outsource and outstaffing business partner who will thoroughly farmiliaze ourselves with your
             business and help drive efficiency and development. We help you on-board talented professionals for efficient and robust
-            projects whatever the scale and complexity is.<br/>
+            projects whatever the scale and complexity is.<br />
             <span class="corporate-color-orange">Tecwi</span> was founded in 2011 by software developers with years of commercial experience in the UK, Europe, the USA and Canada.
             We are London based private limited company with the development hub in Ukraine.<br />
-            Our values is to go beyond clients' expectations by bringing together innovations, technology and talent.<br/>
-            Our mission is to meet enterprise challenges and address innovative business opportunities in order to maximize business result. 
+            Our values is to go beyond clients' expectations by bringing together innovations, technology and talent.<br />
+            Our mission is to meet enterprise challenges and address innovative business opportunities in order to maximize business result.
         </p>
     </div>
 </div>
-
+<hr />
 @{
     Html.RenderAction("MainClientsGet", "Clients");
 }

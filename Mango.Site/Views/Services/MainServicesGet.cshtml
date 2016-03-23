@@ -3,49 +3,54 @@
     Layout = null;
 }
 
-<div class="row" >
+<div class="row">
     @foreach (var service in Model)
     {
+        string actionName = String.Empty;
+        switch (service.Id)
+        {
+            case 1:
+            case 2:
+                actionName = "YourDevelopmentTeam";
+                break;
+            case 3:
+                actionName = "ApplicationsDevelopment";
+                break;
+        }
+
         <div class="col-md-4 service-block">
             <div class="row">
-                <div class="col-md-12 text-center" style="background-color: #d34b17; color: #fff">
-                    <h2>@service.Name</h2>
+                <div class="col-md-12 text-center service-block-header">
+                    <h2>@Html.ActionLink(service.Name, @actionName, "Services", null, new { @class = "" })</h2>
                 </div>
-                    <div class="col-md-12 text-justify" >@Html.Raw(service.ShortDescription)</div>
-                    @{
-                        string actionName = String.Empty;
-                        switch (service.Id)
-                        {
-                            case 1:
-                            case 2:
-                                actionName = "YourDevelopmentTeam";
-                                break;
-                            case 3:
-                                actionName = "ApplicationsDevelopment";
-                                break;
-                        }
+
+                <div class="col-md-12 text-justify service-block-description">
+                    @Html.Raw(service.ShortDescription)
+                    <span>@Html.ActionLink("GO!", @actionName, "Services", null, new { @class = "" })</span>
+                </div>
+            </div>
+@*            <div class="row">*@
+@*                <div class="col-md-12 active">*@
+@*                    @Html.ActionLink("More >>", @actionName, "Services", null, new {@class = "btn btn-default"})*@
+@*                </div>*@
+@*            </div>*@
+        </div>
                     }
-                </div>
+    @* <div class="col-md-4 service-block">
             <div class="row">
-                <div class="col-md-12 active">@Html.ActionLink("More >>", @actionName, "Services", null, new { @class = "btn btn-default" })</div>
+                <div class="col-md-12">
+                    <h2>Software Quality Assurance</h2>
+                </div>
+                <div class="col-md-12 text-justify">
+                    <ul>
+                        <li>@Html.ActionLink("Independent Testing ", "Details", "Services", new { @id = 6 }, null)</li>
+                        <li>@Html.ActionLink("Test Automation", "Details", "Services", new { @id = 5 }, null)</li>
+                        <li>@Html.ActionLink("Application Security Testing", "Details", "Services", new { @id = 7 }, null)</li>
+                        <li>@Html.ActionLink("Load Testing", "Details", "Services", new { @id = 8 }, null)</li>
+                    </ul>
+                </div>
+                <div class="col-md-12 active">@Html.ActionLink("More >>", "SoftwareQualityAssurance", "Services", null, new { @class = "btn btn-default" })</div>
             </div>
-        </div>
-                    }
-   @* <div class="col-md-4 service-block">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Software Quality Assurance</h2>
             </div>
-            <div class="col-md-12 text-justify">
-                <ul>
-                    <li>@Html.ActionLink("Independent Testing ", "Details", "Services", new { @id = 6 }, null)</li>
-                    <li>@Html.ActionLink("Test Automation", "Details", "Services", new { @id = 5 }, null)</li>
-                    <li>@Html.ActionLink("Application Security Testing", "Details", "Services", new { @id = 7 }, null)</li>
-                    <li>@Html.ActionLink("Load Testing", "Details", "Services", new { @id = 8 }, null)</li>
-                </ul>
-            </div>
-            <div class="col-md-12 active">@Html.ActionLink("More >>", "SoftwareQualityAssurance", "Services", null, new { @class = "btn btn-default" })</div>
-        </div>
-        </div>
-    </div>*@
-    </div>
+        </div>*@
+</div>

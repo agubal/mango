@@ -23,6 +23,9 @@ textarea {
     max-width: 680px;
 }
 
+hr {
+    border: 0; height: 1px; background-image: linear-gradient(to right, rgba(130, 156, 26, 0), #829c1a, rgba(130, 156, 26, 0));
+}
 
 .client img {
     background-position: center center;
@@ -40,9 +43,12 @@ textarea {
     background-repeat: no-repeat;
 }
 
+.block h2 {
+    margin: 0 0 20px 0;
+}
+
 .block {
-    margin: 20px 0;
-    padding: 10px 0;
+    margin: 40px 0;
 }
 
 .widget {
@@ -126,22 +132,53 @@ footer {
 }
 
 .corporate-color-brown {
-    color:#452b22
+    color: #452b22;
 }
 
 .corporate-color-green {
-    color:#829c1a
+    color: #829c1a;
 }
 
 .corporate-color-orange {
-    color:#d34b17
+    color: #d34b17;
 }
 
 .service-block {
-    padding: 20px;
+    padding: 10px 30px;
 }
 
 .background-corporate-color-biege {
-    background-color: #d4cbc7
+    background-color: #d4cbc7;
 }
+
+.service-block-header {
+    background-color: #d34b17;
+    color: #fff;
+    vertical-align: central;
+    margin-bottom: 10px;
+}
+
+.service-block-header h2 {
+    margin: 15px
+}
+
+.service-block-header h2 a, .service-block-header h2 a:visited{
+    color: #fff;
+}
+
+.service-block-header h2 a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.service-block .service-block-description {
+    padding: 0; 
+}
+
+.service-block .service-block-description a{
+    color: #829c1a;
+    font-weight: bold;
+}
+
+
 

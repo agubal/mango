@@ -85,6 +85,7 @@ namespace Mango.Site.Controllers
             }
         }
 
+        [AllowAnonymous]
         public ActionResult MainClientsGet()
         {
             List<Client> clients = _clientService.Filter(g => g.IsMain).OrderBy(g => g.Order).ToList();

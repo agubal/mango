@@ -36,10 +36,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="EAGetMail45">
-      <HintPath>..\..\..\Program Files (x86)\EAGetMail\EAGetMail45.dll</HintPath>
+      <HintPath>..\Libs\EAGetMail45.dll</HintPath>
     </Reference>
     <Reference Include="EASendMail45">
-      <HintPath>..\..\..\Program Files (x86)\EASendMail\EASendMail45.dll</HintPath>
+      <HintPath>..\Libs\EASendMail45.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>

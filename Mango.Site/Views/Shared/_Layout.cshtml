@@ -25,19 +25,12 @@
 
             <div class="navbar-collapse collapse navbar-right" style="margin-top: 15px">
                 <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="@Url.Action("YourDevelopmentTeam", "Services")" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Your development team<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Your 100% Remote development team", "YourDevelopmentTeam", "Services")</li>
-                            <li role="separator" class="divider"></li>
-                            <li>@Html.ActionLink("Your development team in our offices", "YourDevelopmentTeam", "Services")</li>
-                        </ul>
-                    </li>
-                    <li>@Html.ActionLink("Application development", "ApplicationsDevelopment", "Services")</li>
+                    <li>@Html.ActionLink("My development team", "YourDevelopmentTeam", "Services")</li>
+                    <li>@Html.ActionLink("Custom product development", "ApplicationsDevelopment", "Services")</li>
                     <li>@Html.ActionLink("Quality Assurance", "SoftwareQualityAssurance", "Services")</li>
                     <li>@Html.ActionLink("Why Tecwi", "WhyTecwi", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Careers", "Careers", "Home")</li>
+@*                    <li>@Html.ActionLink("Careers", "Careers", "Home")</li>*@
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
             </div>

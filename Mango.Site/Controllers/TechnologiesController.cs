@@ -85,6 +85,7 @@ namespace Mango.Site.Controllers
             }
         }
 
+        [AllowAnonymous]
         public ActionResult MainTechnologiesGet()
         {
             List<Technology> techs = _technologyService.Filter(g => g.IsMain).OrderBy(g => g.Order).ToList();

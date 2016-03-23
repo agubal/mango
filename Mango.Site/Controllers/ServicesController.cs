@@ -22,6 +22,11 @@ namespace Mango.Site.Controllers
             return View(GetAll());
         }
 
+        public ActionResult Manage()
+        {
+            return View(GetAll());
+        }
+
         [AllowAnonymous]
         public ActionResult Details(int id)
         {
@@ -39,7 +44,7 @@ namespace Mango.Site.Controllers
             try
             {
                 CreateItem(value);
-                return RedirectToAction("Index");
+                return RedirectToAction("Manage");
             }
             catch
             {
@@ -58,7 +63,7 @@ namespace Mango.Site.Controllers
             try
             {
                 EditItem(id, value);
-                return RedirectToAction("Index");
+                return RedirectToAction("Manage");
             }
             catch
             {
@@ -77,7 +82,7 @@ namespace Mango.Site.Controllers
             try
             {
                 DeleteItem(id);
-                return RedirectToAction("Index");
+                return RedirectToAction("Manage");
             }
             catch
             {
@@ -85,6 +90,7 @@ namespace Mango.Site.Controllers
             }
         }
 
+        [AllowAnonymous]
         public ActionResult MainServicesGet()
         {
             List<Service> services = _servicesService.Filter(g => g.IsMain).OrderBy(g => g.Order).ToList();
@@ -92,16 +98,19 @@ namespace Mango.Site.Controllers
             return PartialView(models);
         }
 
+        [AllowAnonymous]
         public ActionResult YourDevelopmentTeam()
         {
             return View();
         }
 
+        [AllowAnonymous]
         public ActionResult ApplicationsDevelopment()
         {
             return View();
         }
 
+        [AllowAnonymous]
         public ActionResult SoftwareQualityAssurance()
         {
             return View();
