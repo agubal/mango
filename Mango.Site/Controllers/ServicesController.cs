@@ -17,6 +17,7 @@ namespace Mango.Site.Controllers
             _servicesService = serviceService;
         }
 
+        [AllowAnonymous]
         public ActionResult Index()
         {
             return View(GetAll());
