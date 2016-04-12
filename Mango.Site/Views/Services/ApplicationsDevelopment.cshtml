@@ -9,12 +9,12 @@
     </div>
 </div>
 
-<div class="row text-justify">
+<div class="row text-justify" style="vertical-align: central">
     <div class="col-md-6">
         <div class="row">
             <div class="col-md-12 margin-bottom-10">
                 <h3>
-                    <span class="glyphicon glyphicon-search corporate-color-green"></span> What we offer in particular?
+                    <span class="glyphicon glyphicon-search corporate-color-green"></span> Custom Product Development
                 </h3>
             </div>
         </div>
@@ -44,40 +44,42 @@
     </div>
 </div>
 <hr />
-<div class="row margin-bottom-10">
-    <div class="col-md-12 corporate-color-brown">
-                <h3 style="float: left">
-                    <b class="glyphicon glyphicon-cog corporate-color-green"></b> How Custom Product Development works?
-                </h3>
-            <span class="text-bottom" style="margin-top:40pt; margin-left:20pt">
-                @Html.ActionLink("Compare to \"My Development Team\"", "Index", "Services", null, new { @class = "corporate-color-green" })
-            </span>
-        </div>
-</div>
+@*<div class="row margin-bottom-10">*@
+@*    <div class="col-md-12 corporate-color-brown">*@
+@*        <div style="vertical-align: central">*@
+@*            <h3 style="float: left">*@
+@*                <b class="glyphicon glyphicon-cog corporate-color-green"></b> What we offer in particular?*@
+@*            </h3>*@
+@*            @Html.ActionLink("Compare to \"My Development Team\"", "Index", "Services", null, new { @class = "corporate-color-green" })*@
+@*        </div>*@
+@*        </div>*@
+@*</div>*@
 
 
 <div class="row text-justify">
     <div class="col-md-4 service-block">
         <div class="row">
-            <div class="col-md-12 text-center service-block-header" style="padding-bottom: 20px; padding-top: 20px">
-                <h4>Project Types</h4>
+            <div class="col-md-12 text-center service-block-header" style="padding-bottom: 10px; padding-top: 10px">
+                <h4><span class="glyphicon glyphicon-th-list" style="margin-right: 10pt"></span> Project Types</h4>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12" style="color: grey">
-                <span class="glyphicon glyphicon-menu-right corporate-color-green" style="margin-right: 10pt"></span> Turnkey projects from the scratch<br />
-                <span class="glyphicon glyphicon-menu-right corporate-color-green" style="margin-right: 10pt"></span> Integration with systems that you already utilize<br />
-                <span class="glyphicon glyphicon-menu-right corporate-color-green" style="margin-right: 10pt"></span> Legacy IT system transformation<br />
-                <span class="glyphicon glyphicon-menu-right corporate-color-green" style="margin-right: 10pt"></span> Moving to Cloud<br />
-                <span class="glyphicon glyphicon-menu-right corporate-color-green" style="margin-right: 10pt"></span> Data Warehousing solutions<br />
-                <span class="glyphicon glyphicon-menu-right corporate-color-green" style="margin-right: 10pt"></span> Startups, etc...
+                <ul class="lists">
+                    <li> Turnkey projects from the scratch</li>
+                    <li>Integration with systems that you already utilize</li>
+                    <li> Legacy IT system transformation</li>
+                    <li> Moving to Cloud</li>
+                    <li> Data Warehousing solutions</li>
+                    <li> Startups, etc...</li>
+                </ul>
             </div>
         </div>
     </div>
     <div class="col-md-4 service-block">
         <div class="row">
-            <div class="col-md-12 text-center service-block-header" style="padding-bottom: 20px; padding-top: 20px">
-                <h4>What do we do?</h4>
+            <div class="col-md-12 text-center service-block-header" style="padding-bottom: 10px; padding-top: 10px">
+                <h4><span class="glyphicon glyphicon-briefcase" style="margin-right: 10pt"></span> What do we do?</h4>
             </div>
         </div>
         <div class="row">
@@ -85,17 +87,22 @@
                 <span class="corporate-color-orange">Tecwi</span> offers umbrella software development for custom projects from inception to launch
                 and beyond. Our inhouse team delivers full spectrum of custom software development - we help you to design, develop, deploy and run next-
                 generation products that will bring your business to new orbit. Mor specifically, our services include:<br />
-                <span class="glyphicon glyphicon-menu-right corporate-color-green" style="margin-right: 10pt"></span> Prototyping the idea, <abbr title="Minimum Value Product" class="initialism">MVP</abbr> concept, architecture set-up<br />
-                <span class="glyphicon glyphicon-menu-right corporate-color-green" style="margin-right: 10pt"></span> Coding and design<br />
-                <span class="glyphicon glyphicon-menu-right corporate-color-green" style="margin-right: 10pt"></span> Testing and QA<br />
-                <span class="glyphicon glyphicon-menu-right corporate-color-green" style="margin-right: 10pt"></span> Roll-out support: end-product trainings, preventive maintenance, troubleshooting
+                <ul class="lists">
+                    <li>
+                        Prototyping the idea,
+                        <abbr title="Minimum Value Product" class="initialism">MVP</abbr> concept, architecture set-up
+                    </li>
+                    <li> Coding and design</li>
+                    <li> Testing and QA</li>
+                    <li> Roll-out support: end-product trainings, preventive maintenance, troubleshooting</li>
+                </ul>
             </div>
         </div>
     </div>
     <div class="col-md-4 service-block">
         <div class="row">
-            <div class="col-md-12 text-center service-block-header" style="padding-bottom: 20px; padding-top: 20px">
-                <h4>Your part</h4>
+            <div class="col-md-12 text-center service-block-header" style="padding-bottom: 10px; padding-top: 10px">
+                <h4><span class="glyphicon glyphicon-hand-right" style="margin-right: 10pt"></span> Your part</h4>
             </div>
         </div>
         <div class="row">
@@ -106,685 +113,57 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-12 text-right">
+            @Html.ActionLink("Compare to \"My Development Team\" >>", "Index", "Services", null, new { @class = "corporate-color-green" })
+        </div>
+    </div>
 </div>
 
 
 <hr />
 <div class="row margin-bottom-10">
     <div class="col-md-12 corporate-color-brown">
-        <h3><span class="glyphicon glyphicon-off corporate-color-green"></span> What's needed to get started?
-        </h3>
+        <h3> <b class="glyphicon glyphicon-cog corporate-color-green"></b>   How it works?</h3>
     </div>
 </div>
 
-<div class="row margin-bottom text-justify">
+<div class="row margin-bottom text-center">
     <div class="col-md-12">
-        <div class="row">
+        <div class="row" style="margin-bottom:50px">
             <div class="col-md-2">
-                <h5 class="corporate-color-orange"><img src="~/Content/images/idea_app_dev.png" class="image-responsive"/><br/> Step 1</h5>
+                <h4 class="corporate-color-orange"><img src="~/Content/images/idea_app_dev.png" class="image-responsive" /> Step 1</h4>
                 You challenge us with the concept
             </div>
-            <div class="col-md-1">
-                <img src="~/Content/images/arrow.png" class="image-responsive"/>
+            <div class="col-md-1" style="vertical-align: bottom">
+                <img src="~/Content/images/arrow.png" class="image-responsive" />
             </div>
             <div class="col-md-2">
-                <h5 class="corporate-color-orange">
-                    <img src="~/Content/images/prototype.png" class="image-responsive"/><br/> Step 2</h5>
+                <h4 class="corporate-color-orange">
+                    <img src="~/Content/images/prototype.png" class="image-responsive" />  Step 2
+                </h4>
                 We design and prototype
             </div>
             <div class="col-md-1">
-                <img src="~/Content/images/arrow.png" class="image-responsive"/>
+                <img src="~/Content/images/arrow.png" class="image-responsive" />
             </div>
             <div class="col-md-2">
-                <h5 class="corporate-color-orange">
-                    <img src="~/Content/images/dev_app_dev.png" class="image-responsive"/><br/> Step 3
-                </h5>
+                <h4 class="corporate-color-orange">
+                    <img src="~/Content/images/dev_app_dev.png" class="image-responsive" />  Step 3
+                </h4>
                 We develop and deploy
             </div>
             <div class="col-md-1">
                 <img src="~/Content/images/arrow.png" class="image-responsive" />
             </div>
             <div class="col-md-3">
-                <h5 class="corporate-color-orange">
-                    <img src="~/Content/images/support_app_dev.png" class="image-responsive" /><br /> Step 4
-                </h5>
+                <h4 class="corporate-color-orange">
+                    <img src="~/Content/images/support_app_dev.png" class="image-responsive" />  Step 4
+                </h4>
                 Roll-out suppport and further maintenance
             </div>
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-@*<div class="row price-panel">*@
-@*    <div class="col-md-12">*@
-@*        <div class="row text-justify">*@
-@**@***
-    @*            <div class="col-md-2"></div>*@<div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div>
-@*            <div class="col-md-5">*@<div class="col-md-5">
-    <div class="col-md-5">
-        <div class="col-md-5">
-            @*                <b>Team</b>*@<b></b><b></b><b></b>
-            @*            </div>*@
-        </div>
-    </div>
-</div>
-@*            <div class="col-md-5">*@<div class="col-md-5">
-    <div class="col-md-5">
-        <div class="col-md-5">
-            @*                <b>Project</b>*@<b></b><b></b><b></b>
-            @*            </div>*@
-        </div>
-    </div>
-</div>
-@*        </div>*@
-@**@*
-@*        <div class="row">*@<div class="row">
-    <div class="row">
-        <div class="row">
-            <div class="row">
-                <div class="row">
-                    <div class="row">
-                        <div class="row">
-                            @*            <div class="col-md-2"></div>*@<div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div>
-                            @*            <div class="col-md-5">*@<div class="col-md-5">
-                                <div class="col-md-5">
-                                    <div class="col-md-5">
-                                        <div class="col-md-5">
-                                            <div class="col-md-5">
-                                                <div class="col-md-5">
-                                                    <div class="col-md-5">
-                                                        @*                <div class="row">*@<div class="row">
-                                                            <div class="row">
-                                                                <div class="row">
-                                                                    <div class="row">
-                                                                        <div class="row">
-                                                                            <div class="row">
-                                                                                <div class="row">
-                                                                                    @*                    <div class="col-md-6 corporate-color-brown text-center">100% remote</div>*@<div class="col-md-6 corporate-color-brown text-center"></div><div class="col-md-6 corporate-color-brown text-center"></div><div class="col-md-6 corporate-color-brown text-center"></div><div class="col-md-6 corporate-color-brown text-center"></div><div class="col-md-6 corporate-color-brown text-center"></div><div class="col-md-6 corporate-color-brown text-center"></div><div class="col-md-6 corporate-color-brown text-center"></div>
-                                                                                    @*                    <div class="col-md-6 corporate-color-brown text-center"><span class="corporate-color-orange">Tecwi</span> based</div>*@<div class="col-md-6 corporate-color-brown text-center"><span class="corporate-color-orange"></span></div><div class="col-md-6 corporate-color-brown text-center"><span class="corporate-color-orange"></span></div><div class="col-md-6 corporate-color-brown text-center"><span class="corporate-color-orange"></span></div><div class="col-md-6 corporate-color-brown text-center"><span class="corporate-color-orange"></span></div><div class="col-md-6 corporate-color-brown text-center"><span class="corporate-color-orange"></span></div><div class="col-md-6 corporate-color-brown text-center"><span class="corporate-color-orange"></span></div><div class="col-md-6 corporate-color-brown text-center"><span class="corporate-color-orange"></span></div>
-                                                                                    @*                </div>*@
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        @*            </div>*@
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @*            <div class="col-md-5"></div>*@<div class="col-md-5"></div><div class="col-md-5"></div><div class="col-md-5"></div><div class="col-md-5"></div><div class="col-md-5"></div><div class="col-md-5"></div><div class="col-md-5"></div>
-                            @*        </div>*@
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@**@
-@*        <div class="row">*@<div class="row">
-    <div class="row">
-        <div class="row">
-            <div class="row">
-                <div class="row">
-                    <div class="row">
-                        <div class="row">
-                            @*            <div class="col-md-2">Description</div>*@<div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div>
-                            @*            <div class="col-md-5">*@<div class="col-md-5">
-                                <div class="col-md-5">
-                                    <div class="col-md-5">
-                                        <div class="col-md-5">
-                                            <div class="col-md-5">
-                                                <div class="col-md-5">
-                                                    <div class="col-md-5">
-                                                        @*                Custom-recruited software developers/teams*@
-                                                        @*                <div class="row">*@<div class="row">
-                                                            <div class="row">
-                                                                <div class="row">
-                                                                    <div class="row">
-                                                                        <div class="row">
-                                                                            <div class="row">
-                                                                                <div class="row">
-                                                                                    @*                    <div class="col-md-6">100% remote-sourcing</div>*@<div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div>
-                                                                                    @*                    <div class="col-md-6">*@<div class="col-md-6">
-                                                                                        <div class="col-md-6">
-                                                                                            <div class="col-md-6">
-                                                                                                <div class="col-md-6">
-                                                                                                    <div class="col-md-6">
-                                                                                                        <div class="col-md-6">
-                                                                                                            <div class="col-md-6">
-                                                                                                                @*                        Within <span class="corporate-color-orange">Tecwi</span> offices in Ukraine*@<span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span>
-                                                                                                                @*                    </div>*@
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    @*                </div>*@
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        @*            </div>*@
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @*            <div class="col-md-5">*@<div class="col-md-5">
-                                <div class="col-md-5">
-                                    <div class="col-md-5">
-                                        <div class="col-md-5">
-                                            <div class="col-md-5">
-                                                <div class="col-md-5">
-                                                    <div class="col-md-5">
-                                                        @*                Turn key project executed <span class="corporate-color-orange">Tecwi</span>internal team*@<span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span>
-                                                        @*            </div>*@
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @*        </div>*@
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@**@
-@*        <div class="row">*@<div class="row">
-    <div class="row">
-        <div class="row">
-            <div class="row">
-                <div class="row">
-                    <div class="row">
-                        <div class="row">
-                            @*            <div class="col-md-2">Who bears risks?</div>*@<div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div>
-                            @*            <div class="col-md-5">Most delivery risks are on Clinet's side</div>*@<div class="col-md-5"></div><div class="col-md-5"></div><div class="col-md-5"></div><div class="col-md-5"></div><div class="col-md-5"></div><div class="col-md-5"></div><div class="col-md-5"></div>
-                            @*            <div class="col-md-5">*@<div class="col-md-5">
-                                <div class="col-md-5">
-                                    <div class="col-md-5">
-                                        <div class="col-md-5">
-                                            <div class="col-md-5">
-                                                <div class="col-md-5">
-                                                    <div class="col-md-5">
-                                                        @*                Shared <span class="corporate-color-orange">Tecwi</span> Client*@<span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span>
-                                                        @*            </div>*@
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @*        </div>*@
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@**@
-    @*        <div class="row">*@<div class="row">
-    <div class="row">
-        <div class="row">
-            <div class="row">
-                <div class="row">
-                    <div class="row">
-                        <div class="row">
-                            @*            <div class="col-md-2">*@<div class="col-md-2">
-                                <div class="col-md-2">
-                                    <div class="col-md-2">
-                                        <div class="col-md-2">
-                                            <div class="col-md-2">
-                                                <div class="col-md-2">
-                                                    <div class="col-md-2">
-                                                        @*                <span class="corporate-color-orange">Tecwi</span> responsibilities*@<span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span>
-                                                        @*            </div>*@
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @*            <div class="col-md-5">*@<div class="col-md-5">
-                                <div class="col-md-5">
-                                    <div class="col-md-5">
-                                        <div class="col-md-5">
-                                            <div class="col-md-5">
-                                                <div class="col-md-5">
-                                                    <div class="col-md-5">
-                                                        @*                <div class="row">*@<div class="row">
-                                                            <div class="row">
-                                                                <div class="row">
-                                                                    <div class="row">
-                                                                        <div class="row">
-                                                                            <div class="row">
-                                                                                <div class="row">
-                                                                                    @*                    <div class="col-md-12">Sourcing dedicated developers</div>*@<div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div>
-                                                                                    @*                </div>*@
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        @*                <div class="row">*@<div class="row">
-                                                            <div class="row">
-                                                                <div class="row">
-                                                                    <div class="row">
-                                                                        <div class="row">
-                                                                            <div class="row">
-                                                                                <div class="row">
-                                                                                    @*                    <div class="col-md-12">*@<div class="col-md-12">
-                                                                                        <div class="col-md-12">
-                                                                                            <div class="col-md-12">
-                                                                                                <div class="col-md-12">
-                                                                                                    <div class="col-md-12">
-                                                                                                        <div class="col-md-12">
-                                                                                                            <div class="col-md-12">
-                                                                                                                @*                        Full staff support: HR, retetion programs, hardware specialists,*@
-                                                                                                                @*                        business trip coordination, payroll and other payments administration*@
-                                                                                                                @*                    </div>*@
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    @*                </div>*@
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        @*                <div class="row">*@<div class="row">
-                                                            <div class="row">
-                                                                <div class="row">
-                                                                    <div class="row">
-                                                                        <div class="row">
-                                                                            <div class="row">
-                                                                                <div class="row">
-                                                                                    @*                    <div class="col-md-6"></div>*@<div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div>
-                                                                                    @*                    <div class="col-md-6">*@<div class="col-md-6">
-                                                                                        <div class="col-md-6">
-                                                                                            <div class="col-md-6">
-                                                                                                <div class="col-md-6">
-                                                                                                    <div class="col-md-6">
-                                                                                                        <div class="col-md-6">
-                                                                                                            <div class="col-md-6">
-                                                                                                                @*                        Workspace in <span class="corporate-color-orange">Tecwi</span>*@<span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span><span class="corporate-color-orange"></span>
-                                                                                                                @*                        offices, conference rooms, lounge zones, kitchens*@
-                                                                                                                @*                    </div>*@
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    @*                </div>*@
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        @*            </div>*@
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @*            <div class="col-md-5">*@<div class="col-md-5">
-                                <div class="col-md-5">
-                                    <div class="col-md-5">
-                                        <div class="col-md-5">
-                                            <div class="col-md-5">
-                                                <div class="col-md-5">
-                                                    <div class="col-md-5">
-                                                        @*                <div class="row">*@<div class="row">
-                                                            <div class="row">
-                                                                <div class="row">
-                                                                    <div class="row">
-                                                                        <div class="row">
-                                                                            <div class="row">
-                                                                                <div class="row">
-                                                                                    @*                    <div class="col-md-12">Project planing and management</div>*@<div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div>
-                                                                                    @*                </div>*@
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        @*                <div class="row">*@<div class="row">
-                                                            <div class="row">
-                                                                <div class="row">
-                                                                    <div class="row">
-                                                                        <div class="row">
-                                                                            <div class="row">
-                                                                                <div class="row">
-                                                                                    @*                    <div class="col-md-12">Team</div>*@<div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div>
-                                                                                    @*                </div>*@
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        @*                <div class="row">*@<div class="row">
-                                                            <div class="row">
-                                                                <div class="row">
-                                                                    <div class="row">
-                                                                        <div class="row">
-                                                                            <div class="row">
-                                                                                <div class="row">
-                                                                                    @*                    <div class="col-md-12">Facilities: office, hard + software</div>*@<div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div>
-                                                                                    @*                </div>*@
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        @*                <div class="row">*@<div class="row">
-                                                            <div class="row">
-                                                                <div class="row">
-                                                                    <div class="row">
-                                                                        <div class="row">
-                                                                            <div class="row">
-                                                                                <div class="row">
-                                                                                    @*                    <div class="col-md-12">Project delivery</div>*@<div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div>
-                                                                                    @*                </div>*@
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        @*            </div>*@
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @*        </div>*@
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@*        <div class="row">*@<div class="row">
-    <div class="row">
-        <div class="row">
-            <div class="row">
-                <div class="row">
-                    <div class="row">
-                        <div class="row">
-                            @*            <div class="col-md-2">What we expect from you?</div>*@<div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div>
-                            @*            <div class="col-md-5">*@<div class="col-md-5">
-                                <div class="col-md-5">
-                                    <div class="col-md-5">
-                                        <div class="col-md-5">
-                                            <div class="col-md-5">
-                                                <div class="col-md-5">
-                                                    <div class="col-md-5">
-                                                        @*                <div class="row">*@<div class="row">
-                                                            <div class="row">
-                                                                <div class="row">
-                                                                    <div class="row">
-                                                                        <div class="row">
-                                                                            <div class="row">
-                                                                                <div class="row">
-                                                                                    @*                    <div class="col-md-12">Project management</div>*@<div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div>
-                                                                                    @*                    <div class="col-md-12">Satisfaction feedback</div>*@<div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div>
-                                                                                    @*                </div>*@
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        @*            </div>*@
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @*            <div class="col-md-5">*@<div class="col-md-5">
-                                <div class="col-md-5">
-                                    <div class="col-md-5">
-                                        <div class="col-md-5">
-                                            <div class="col-md-5">
-                                                <div class="col-md-5">
-                                                    <div class="col-md-5">
-                                                        @*                Providing business requirements<br />*@<br /><br /><br /><br /><br /><br /><br />
-                                                        @*                Negotiating deadlines and expectations<br />*@<br /><br /><br /><br /><br /><br /><br />
-                                                        @*                Dedicated contact for mid-road clarifications and checks<br />*@<br /><br /><br /><br /><br /><br /><br />
-                                                        @*                Satisfaction feedback*@
-                                                        @*            </div>*@
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @*        </div>*@
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@**@
-@*        <div class="row">*@<div class="row">
-    <div class="row">
-        <div class="row">
-            <div class="row">
-                <div class="row">
-                    <div class="row">
-                        <div class="row">
-                            @*            <div class="col-md-2">Pricing options</div>*@<div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div><div class="col-md-2"></div>
-                            @*            <div class="col-md-5">*@<div class="col-md-5">
-                                <div class="col-md-5">
-                                    <div class="col-md-5">
-                                        <div class="col-md-5">
-                                            <div class="col-md-5">
-                                                <div class="col-md-5">
-                                                    <div class="col-md-5">
-                                                        @*                <div class="row">*@<div class="row">
-                                                            <div class="row">
-                                                                <div class="row">
-                                                                    <div class="row">
-                                                                        <div class="row">
-                                                                            <div class="row">
-                                                                                <div class="row">
-                                                                                    @*                    <div class="col-md-12">Salary:</div>*@<div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div>
-                                                                                    @*                    <div class="col-md-12">*@<div class="col-md-12">
-                                                                                        <div class="col-md-12">
-                                                                                            <div class="col-md-12">
-                                                                                                <div class="col-md-12">
-                                                                                                    <div class="col-md-12">
-                                                                                                        <div class="col-md-12">
-                                                                                                            <div class="col-md-12">
-                                                                                                                @*                        <div class="row">*@<div class="row">
-                                                                                                                    <div class="row">
-                                                                                                                        <div class="row">
-                                                                                                                            <div class="row">
-                                                                                                                                <div class="row">
-                                                                                                                                    <div class="row">
-                                                                                                                                        <div class="row">
-                                                                                                                                            @*                            <div class="col-md-6">*@<div class="col-md-6">
-                                                                                                                                                <div class="col-md-6">
-                                                                                                                                                    <div class="col-md-6">
-                                                                                                                                                        <div class="col-md-6">
-                                                                                                                                                            <div class="col-md-6">
-                                                                                                                                                                <div class="col-md-6">
-                                                                                                                                                                    <div class="col-md-6">
-                                                                                                                                                                        @*                                Monthly based salary rate<br>Per hour salary rate*@<br><br><br><br><br><br><br>
-                                                                                                                                                                        @*                            </div>*@
-                                                                                                                                                                    </div>
-                                                                                                                                                                </div>
-                                                                                                                                                            </div>
-                                                                                                                                                        </div>
-                                                                                                                                                    </div>
-                                                                                                                                                </div>
-                                                                                                                                            </div>
-                                                                                                                                            @*                            <div class="col-md-6">Monthly based salary rate</div>*@<div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div>
-                                                                                                                                            @*                        </div>*@
-                                                                                                                                        </div>
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                                @*                    </div>*@
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    @*                </div>*@
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        @*                <div class="row">*@<div class="row">
-                                                            <div class="row">
-                                                                <div class="row">
-                                                                    <div class="row">
-                                                                        <div class="row">
-                                                                            <div class="row">
-                                                                                <div class="row">
-                                                                                    @*                    <div class="col-md-12">Facilities:</div>*@<div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div>
-                                                                                    @*                    <div class="col-md-12">*@<div class="col-md-12">
-                                                                                        <div class="col-md-12">
-                                                                                            <div class="col-md-12">
-                                                                                                <div class="col-md-12">
-                                                                                                    <div class="col-md-12">
-                                                                                                        <div class="col-md-12">
-                                                                                                            <div class="col-md-12">
-                                                                                                                @*                        <div class="row">*@<div class="row">
-                                                                                                                    <div class="row">
-                                                                                                                        <div class="row">
-                                                                                                                            <div class="row">
-                                                                                                                                <div class="row">
-                                                                                                                                    <div class="row">
-                                                                                                                                        <div class="row">
-                                                                                                                                            @*                            <div class="col-md-6">not applicable</div>*@<div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div>
-                                                                                                                                            @*                            <div class="col-md-6">Hard + software</div>*@<div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div><div class="col-md-6"></div>
-                                                                                                                                            @*                        </div>*@
-                                                                                                                                        </div>
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                                @*                    </div>*@
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    @*                </div>*@
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        @*            </div>*@
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @*            <div class="col-md-5">*@<div class="col-md-5">
-                                <div class="col-md-5">
-                                    <div class="col-md-5">
-                                        <div class="col-md-5">
-                                            <div class="col-md-5">
-                                                <div class="col-md-5">
-                                                    <div class="col-md-5">
-                                                        @*                <div class="col-md-12">Lump Sum Turn Key</div>*@<div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div>
-                                                        @*                <div class="col-md-12">Facilities: n/a</div>*@<div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div>
-                                                        @*            </div>*@
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @**@
-                            @*        </div>*@
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@*    </div>*@
-@*</div>*@
-
-
 
 
