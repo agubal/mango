@@ -20,7 +20,7 @@ namespace Mango.Site.Controllers
         [AllowAnonymous]
         public ActionResult Index()
         {
-            return View(GetAll());
+            return View();
         }
 
         public ActionResult Manage()

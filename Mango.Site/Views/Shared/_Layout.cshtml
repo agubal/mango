@@ -40,6 +40,9 @@
     </div>
     <div class="body-content container">
         @RenderBody()
+        @{
+            Html.RenderAction("Create", "Message");
+        }
         @Html.Partial("_Footer")
     </div>
     @Scripts.Render("~/bundles/jquery")
