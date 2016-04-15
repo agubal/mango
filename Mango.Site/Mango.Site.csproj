@@ -265,6 +265,7 @@
     <Content Include="Content\images\communication_your_dev-Team.png" />
     <Content Include="Content\images\computers.png" />
     <Content Include="Content\images\Contacts.png" />
+    <Content Include="Content\images\cookies.png" />
     <Content Include="Content\images\dev_app_dev.png" />
     <Content Include="Content\images\founder.png" />
     <Content Include="Content\images\functional trsting.png" />
@@ -280,6 +281,7 @@
     <Content Include="Content\images\lamps.png" />
     <Content Include="Content\images\lamps_big.png" />
     <Content Include="Content\images\loupe.png" />
+    <Content Include="Content\images\mark.png" />
     <Content Include="Content\images\Me.png" />
     <Content Include="Content\images\negotiations_room.png" />
     <Content Include="Content\images\next_steps_your_dev-team.png" />

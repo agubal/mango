@@ -1,14 +1,69 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<div class="row margin-bottom-10">
-    <div class="col-md-12">
-        <img src="~/Content/images/Contacts.png" class="img-responsive" />
+
+<div class="row margin-bottom-30">
+    <div id="map" class="col-md-12">
+
     </div>
 </div>
-<div class="row margin-bottom-10" style="vertical-align: central; background-color: ghostwhite">
+
+@section scripts
+{
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            initMap();
+        });
+
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 5,
+                center: { lat: 52.2296756, lng: 21.0122287 }
+            });
+            setMarkers(map);
+        }
+
+        var tecwiLocations = [
+            ['Kiev', 50.4546600, 30.5238000, 3],
+            ['Lvov', 49.8382600, 24.0232400, 2],
+            ['London', 51.5085300, -0.1257400, 1]
+        ];
+
+        function setMarkers(map) {
+
+            var image = {
+                url: 'http://localhost:5118/Content/images/mark.png',
+                size: new google.maps.Size(150, 70),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(40, 50)
+            };
+
+            var shape = {
+                coords: [1, 1, 1, 20, 18, 20, 18, 1],
+                type: 'poly'
+            };
+
+            for (var i = 0; i < tecwiLocations.length; i++) {
+                var tecwiLocation = tecwiLocations[i];
+                var marker = new google.maps.Marker({
+                    position: { lat: tecwiLocation[1], lng: tecwiLocation[2] },
+                    map: map,
+                    icon: image,
+                    shape: shape,
+                    title: tecwiLocation[0],
+                    zIndex: tecwiLocation[3]
+                });
+            }
+        }
+
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4_kOVF1FzoO5iSDr0Vd1VwdI8vbbMm0Q&signed_in=true&callback=initMap"
+            async defer></script>}
+
+<div class="row margin-bottom-10">
     <div class="col-md-6">
-        <h3>London:</h3><br />
+        <div><span class="glyphicon glyphicon-map-marker corporate-color-orange" aria-hidden="true"></span> <h3 class="corporate-color-brown">London:</h3></div>
         <address>
             <div>
                 <span class="glyphicon glyphicon-pencil corporate-color-orange" aria-hidden="true"></span>
@@ -27,75 +82,75 @@
             </div>
         </address>
     </div>
-    <div class="col-md-6" style="background-color: ghostwhite">
-        <h3>Kiev:</h3><br />
-        <address>
-            <div>
-                <span class="glyphicon glyphicon-pencil corporate-color-orange" aria-hidden="true"></span>
-                4, Mykoly Hrinchenka Street,<br />
-                Horizon Park BC,<br />
-                Kiev, 03038<br />
-            </div>
-            <div>
-                <span class="glyphicon glyphicon-phone corporate-color-orange" aria-hidden="true"></span>
-                <abbr title="Phone">P:</abbr>
-                +38 095 465 79 66,
-
-            </div>
-            <div>
-                <span class="glyphicon glyphicon-send corporate-color-orange" aria-hidden="true"></span>
-                <a href="mailto:kiev@tecwi.com">kiev@tecwi.com</a><br />
-            </div>
-        </address>
-    </div>
-</div>
-<div class="row margin-bottom-10" style="vertical-align: central">
     <div class="col-md-6">
-        <img src="~/Content/images/Me.png" />
-    </div>
-    <div class="col-md-6">
-        For sales inquiries,<br />
-        please contact Natalie Hubal<br />
-        <abbr title="Phone">P:</abbr>
-        +38 097 828 06 30
-    </div>
-</div>
-<div class="row margin-bottom-10" style="vertical-align: central">
-    <h3 class="col-md-6 margin-bottom-10 corporate-color-brown">
-        <span class="glyphicon glyphicon-map-marker corporate-color-orange" aria-hidden="true"></span>
-        Our office in The United Kingdom
-    </h3>
-    <h3 class="col-md-6 margin-bottom-10 corporate-color-brown">
-        <span class="glyphicon glyphicon-map-marker corporate-color-orange" aria-hidden="true"></span>
-        Our office in Ukraine
-    </h3>
-</div>
-<div class="row margin-bottom-10" style="vertical-align: central">
-    <div class="col-md-6">
-        <img src="~/Content/images/UK_map.png" />
-    </div>
-    <div class="col-md-6">
-        <img src="~/Content/images/Ukraine_map.png" />
-    </div>
-</div>
-<div class="row margin-bottom-10" style="text-align: center">
-    <div class="col-md-12 corporate-color-brown">
-        <h4>Payment details</h4>
-        <p>
-            Tecwi Limited, <br />
+        <div><span class="glyphicon glyphicon-map-marker corporate-color-orange" aria-hidden="true"></span>  <h3 class="corporate-color-brown">Kiev:</h3></div>
+            <address>
+                <div>
+                    <span class="glyphicon glyphicon-pencil corporate-color-orange" aria-hidden="true"></span>
+                    4, Mykoly Hrinchenka Street,<br />
+                    Horizon Park BC,<br />
+                    Kiev, 03038<br />
+                </div>
+                <div>
+                    <span class="glyphicon glyphicon-phone corporate-color-orange" aria-hidden="true"></span>
+                    <abbr title="Phone">P:</abbr>
+                    +38 095 465 79 66,
 
-            71-75, Shelton Street, Covent Garden, <br />
-            London, WC2H 9JQ<br />
-
-            ID: 10032741<br />
-            Tax: CZ25090607<br />
-
-            a/c no.: 2107350288/2700<br />
-            IBAN: CZ98 2700 0000 0021 0735 0288<br />
-            SWIFT: BACXCZPP<br />
-
-            Registered at Companies House, London,the Registar of Companies for England and Wales
-        </p>
-    </div>
+                </div>
+                <div>
+                    <span class="glyphicon glyphicon-send corporate-color-orange" aria-hidden="true"></span>
+                    <a href="mailto:kiev@tecwi.com">kiev@tecwi.com</a><br />
+                </div>
+            </address>
+        </div>
 </div>
+@*<div class="row margin-bottom-10" style="vertical-align: central">*@
+@*    <div class="col-md-6">*@
+@*        <img src="~/Content/images/Me.png" />*@
+@*    </div>*@
+@*    <div class="col-md-6">*@
+@*        For sales inquiries,<br />*@
+@*        please contact Natalie Hubal<br />*@
+@*        <abbr title="Phone">P:</abbr>*@
+@*        +38 097 828 06 30*@
+@*    </div>*@
+@*</div>*@
+@*<div class="row margin-bottom-10" style="vertical-align: central">*@
+@*    <h3 class="col-md-6 margin-bottom-10 corporate-color-brown">*@
+@*        <span class="glyphicon glyphicon-map-marker corporate-color-orange" aria-hidden="true"></span>*@
+@*        Our office in The United Kingdom*@
+@*    </h3>*@
+@*    <h3 class="col-md-6 margin-bottom-10 corporate-color-brown">*@
+@*        <span class="glyphicon glyphicon-map-marker corporate-color-orange" aria-hidden="true"></span>*@
+@*        Our office in Ukraine*@
+@*    </h3>*@
+@*</div>*@
+@*<div class="row margin-bottom-10" style="vertical-align: central">*@
+@*    <div class="col-md-6">*@
+@*        <img src="~/Content/images/UK_map.png" />*@
+@*    </div>*@
+@*    <div class="col-md-6">*@
+@*        <img src="~/Content/images/Ukraine_map.png" />*@
+@*    </div>*@
+@*</div>*@
+@*<div class="row margin-bottom-10" style="text-align: center">*@
+@*    <div class="col-md-12 corporate-color-brown">*@
+@*        <h4>Payment details</h4>*@
+@*        <p>*@
+@*            Tecwi Limited, <br />*@
+@**@
+@*            71-75, Shelton Street, Covent Garden, <br />*@
+@*            London, WC2H 9JQ<br />*@
+@**@
+@*            ID: 10032741<br />*@
+@*            Tax: CZ25090607<br />*@
+@**@
+@*            a/c no.: 2107350288/2700<br />*@
+@*            IBAN: CZ98 2700 0000 0021 0735 0288<br />*@
+@*            SWIFT: BACXCZPP<br />*@
+@**@
+@*            Registered at Companies House, London,the Registar of Companies for England and Wales*@
+@*        </p>*@
+@*    </div>*@
+@*</div>*@
 

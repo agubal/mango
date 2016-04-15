@@ -36,7 +36,8 @@
                         <li>Digital agencies</li>
                         <li>Webshops</li>
                     </ul>
-                    @Html.ActionLink("Learn more", "Clients", "Home", null, new { @class = "btn btn-default btn-default", @style = "background-color: #d34b17;  color: #fff" })
+                    <a href="@Url.Action("Index", "Home")#clients" class="btn btn-default btn-default" style="background-color: #d34b17;  color: #fff">Learn more</a>
+@*                    @Html.ActionLink("Learn more", "MainClientsGet", "Clients", null, new { @class = "btn btn-default btn-default", @style = "background-color: #d34b17;  color: #fff" })*@
                 </p>
             </div>
         </div>
@@ -50,7 +51,7 @@
                         <li>We bring you cost improvement - up to 50% saving</li>
                         <li>Flexible, output-based pricing models, scaling up or down easily</li>
                     </ul>
-                    @Html.ActionLink("Learn more", "WhyTecwi", "Home", null, new { @class = "btn btn-default btn-default", @style = "background-color: #d34b17;  color: #fff" })
+                    @Html.ActionLink("Learn more", "WhyTecwi", "Home", null, new { @class = "btn btn-default carousel-button"})
                 </p>
             </div>
         </div>

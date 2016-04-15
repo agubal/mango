@@ -3,14 +3,14 @@
     Layout = null;
 }
 
-<div class="row client block">
-   <div class="col-md-12 corporate-color-brown">
-    <h2>Over 20 companies rely on Tecwi</h2>
-</div>
+<div id ="clients" class="row client block">
+    <div class="col-md-12 corporate-color-brown">
+        <h2>Over 20 companies rely on Tecwi</h2>
+    </div>
     @foreach (var client in Model)
     {
         <div class="col-md-3">
-            <img style="background-image: url('@client.Photo')" src="/Content/transparent.png"/>
+            <img style="background-image: url('@client.Photo')" src="/Content/transparent.png" />
         </div>
     }
 </div>
