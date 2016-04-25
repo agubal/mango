@@ -21,21 +21,21 @@
         <div class="col-md-4 service-block">
             <div class="row">
                 <div class="col-md-12 text-center service-block-header">
-                    <h2>@Html.ActionLink(service.Name, @actionName, "Services", null, new { @class = "" })</h2>
+                    <h2>@Html.ActionLink(service.Name, @actionName, "Services", null, new {@class = ""})</h2>
                 </div>
 
                 <div class="col-md-12 text-justify service-block-description">
                     @Html.Raw(service.ShortDescription)
-                    <span>@Html.ActionLink("GO!", @actionName, "Services", null, new { @class = "" })</span>
+                    <span>@Html.ActionLink("GO!", @actionName, "Services", null, new {@class = ""})</span>
                 </div>
             </div>
-@*            <div class="row">*@
-@*                <div class="col-md-12 active">*@
-@*                    @Html.ActionLink("More >>", @actionName, "Services", null, new {@class = "btn btn-default"})*@
-@*                </div>*@
-@*            </div>*@
+            @*            <div class="row">*@
+            @*                <div class="col-md-12 active">*@
+            @*                    @Html.ActionLink("More >>", @actionName, "Services", null, new {@class = "btn btn-default"})*@
+            @*                </div>*@
+            @*            </div>*@
         </div>
-                    }
+    }
     @* <div class="col-md-4 service-block">
             <div class="row">
                 <div class="col-md-12">
