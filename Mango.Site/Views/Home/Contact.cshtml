@@ -2,16 +2,16 @@
     ViewBag.Title = "Contact";
 }
 
-<div class="row margin-bottom-30">
-    <div id="map" class="col-md-12">
-
-    </div>
+<div class="row hidden-xs">
+    <div class="col-md-12">
+        <div id="map"></div>
+    </div>   
 </div>
 
 @section scripts
 {
     <script>
-        document.addEventListener("DOMContentLoaded", function(event) {
+        document.addEventListener("DOMContentLoaded", function (event) {
             initMap();
         });
 
@@ -63,8 +63,12 @@
 
 <div class="row margin-bottom-10">
     <div class="col-md-6">
-        <div><span class="glyphicon glyphicon-map-marker corporate-color-orange" aria-hidden="true"></span> <h3 class="corporate-color-brown">London:</h3></div>
-        <address>
+        <div class="contact-header text-center">
+            <h3 class="corporate-color-brown title-line hidden-xs">London</h3>
+            <h3 class="corporate-color-brown hidden-sm hidden-md hidden-lg">London</h3>
+            <img src="~/Content/images/london.jpg" class="img-responsive"/>
+        </div>
+        <address class="text-center">
             <div>
                 <span class="glyphicon glyphicon-pencil corporate-color-orange" aria-hidden="true"></span>
                 71-75, Shelton Street,<br />
@@ -83,8 +87,12 @@
         </address>
     </div>
     <div class="col-md-6">
-        <div><span class="glyphicon glyphicon-map-marker corporate-color-orange" aria-hidden="true"></span>  <h3 class="corporate-color-brown">Kiev:</h3></div>
-            <address>
+        <div class="contact-header text-center">
+            <h3 class="corporate-color-brown title-line hidden-xs">Kiev</h3>
+            <h3 class="corporate-color-brown hidden-sm hidden-md hidden-lg">Kiev</h3>
+            <img src="~/Content/images/kiev.jpg" class="img-responsive"/>
+        </div>
+        <address class="text-center">
                 <div>
                     <span class="glyphicon glyphicon-pencil corporate-color-orange" aria-hidden="true"></span>
                     4, Mykoly Hrinchenka Street,<br />
@@ -101,56 +109,7 @@
                     <span class="glyphicon glyphicon-send corporate-color-orange" aria-hidden="true"></span>
                     <a href="mailto:kiev@tecwi.com">kiev@tecwi.com</a><br />
                 </div>
-            </address>
-        </div>
+        </address>
+    </div>
 </div>
-@*<div class="row margin-bottom-10" style="vertical-align: central">*@
-@*    <div class="col-md-6">*@
-@*        <img src="~/Content/images/Me.png" />*@
-@*    </div>*@
-@*    <div class="col-md-6">*@
-@*        For sales inquiries,<br />*@
-@*        please contact Natalie Hubal<br />*@
-@*        <abbr title="Phone">P:</abbr>*@
-@*        +38 097 828 06 30*@
-@*    </div>*@
-@*</div>*@
-@*<div class="row margin-bottom-10" style="vertical-align: central">*@
-@*    <h3 class="col-md-6 margin-bottom-10 corporate-color-brown">*@
-@*        <span class="glyphicon glyphicon-map-marker corporate-color-orange" aria-hidden="true"></span>*@
-@*        Our office in The United Kingdom*@
-@*    </h3>*@
-@*    <h3 class="col-md-6 margin-bottom-10 corporate-color-brown">*@
-@*        <span class="glyphicon glyphicon-map-marker corporate-color-orange" aria-hidden="true"></span>*@
-@*        Our office in Ukraine*@
-@*    </h3>*@
-@*</div>*@
-@*<div class="row margin-bottom-10" style="vertical-align: central">*@
-@*    <div class="col-md-6">*@
-@*        <img src="~/Content/images/UK_map.png" />*@
-@*    </div>*@
-@*    <div class="col-md-6">*@
-@*        <img src="~/Content/images/Ukraine_map.png" />*@
-@*    </div>*@
-@*</div>*@
-@*<div class="row margin-bottom-10" style="text-align: center">*@
-@*    <div class="col-md-12 corporate-color-brown">*@
-@*        <h4>Payment details</h4>*@
-@*        <p>*@
-@*            Tecwi Limited, <br />*@
-@**@
-@*            71-75, Shelton Street, Covent Garden, <br />*@
-@*            London, WC2H 9JQ<br />*@
-@**@
-@*            ID: 10032741<br />*@
-@*            Tax: CZ25090607<br />*@
-@**@
-@*            a/c no.: 2107350288/2700<br />*@
-@*            IBAN: CZ98 2700 0000 0021 0735 0288<br />*@
-@*            SWIFT: BACXCZPP<br />*@
-@**@
-@*            Registered at Companies House, London,the Registar of Companies for England and Wales*@
-@*        </p>*@
-@*    </div>*@
-@*</div>*@
 

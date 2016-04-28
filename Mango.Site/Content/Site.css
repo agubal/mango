@@ -98,7 +98,7 @@ footer {
     text-decoration: none;
     text-shadow: none;
     text-align: justify;
-    text-justify: auto  
+    text-justify: auto;
 }
 
     .slide-text ul {
@@ -131,6 +131,10 @@ footer {
     margin-bottom: 10px;
 }
 
+.margin-bottom-20 {
+    margin-bottom: 10px;
+}
+
 .margin-bottom-30 {
     margin-bottom: 30px;
 }
@@ -149,6 +153,10 @@ footer {
 
 .corporate-color-orange {
     color: #d34b17;
+}
+
+.text-grey {
+    color: grey;
 }
 
 .service-block {
@@ -190,7 +198,7 @@ footer {
 
 .lists li {
     display: block;
-    margin-bottom: 5px
+    margin-bottom: 5px;
 }
 
     .lists li:before {
@@ -204,16 +212,17 @@ footer {
         color: #829c1a;
     }
 
-    img.bottom {
+img.bottom {
     vertical-align: text-bottom;
 }
-    .text-grey {
-        color:grey
-    }
 
-    .listwhy li {
+.text-grey {
+    color: grey;
+}
+
+.listwhy li {
     display: block;
-    margin-bottom: 5px
+    margin-bottom: 5px;
 }
 
     .listwhy li:before {
@@ -227,68 +236,97 @@ footer {
         color: #829c1a;
     }
 
-    .service-table th {
-            border: 1px solid #fff;
-        }
+.service-table th {
+    border: 1px solid #fff;
+}
 
-        .service-table td {
-            border: 1px solid #829c1a;
-            font-size: 11pt;
-        }
+.service-table td {
+    border: 1px solid #829c1a;
+    font-size: 11pt;
+}
 
-        .service-table .table tr, .service-table .table thead tr {
-            border: none;
-        }
+.service-table .table tr, .service-table .table thead tr {
+    border: none;
+}
 
-        .service-table thead {
-            background-color: #d34b17;
-            color: #fff;
-            text-align: center;
-            vertical-align: middle;
-        }
+.service-table thead {
+    background-color: #d34b17;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
 
-        .service-table .sub-header {
-            background-color: #829c1a;
-            color: #fff;
-        }
+.service-table .sub-header {
+    background-color: #829c1a;
+    color: #fff;
+}
 
-        .service-table h4, .service-table h3 {
-            margin: 0;
-        }
+.service-table h4, .service-table h3 {
+    margin: 0;
+}
 
-            .service-table h4 span {
-                margin: 0 10px 0 20px;
-            }
+    .service-table h4 span {
+        margin: 0 10px 0 20px;
+    }
 
-        .service-table thead h2, .service-table thead h3 {
-            text-align: center;
-        }
+.service-table thead h2, .service-table thead h3 {
+    text-align: center;
+}
 
-        .service-table .no-top-border {
-            border-top: none;
-        }
+.service-table .no-top-border {
+    border-top: none;
+}
 
-        .service-table li {
-            display: block;
-        }
+.service-table li {
+    display: block;
+}
 
-            .service-table li:before {
-                /*Using a Bootstrap glyphicon as the bullet point*/
-                content: "\e080";
-                font-family: 'Glyphicons Halflings';
-                font-size: 9px;
-                float: left;
-                margin-top: 4px;
-                margin-left: -17px;
-                color: #d34b17;
-            }
+    .service-table li:before {
+        /*Using a Bootstrap glyphicon as the bullet point*/
+        content: "\e080";
+        font-family: 'Glyphicons Halflings';
+        font-size: 9px;
+        float: left;
+        margin-top: 4px;
+        margin-left: -17px;
+        color: #d34b17;
+    }
 
-            .carousel-button {
-                background-color: #d34b17;  
-                color: #fff
-            }
+.carousel-button {
+    background-color: #d34b17;
+    color: #fff;
+}
 
-            #map {
-        width: 1140px;
-        height: 297px; 
-      }
+#map {
+    width: 1140px;
+    height: 297px;
+}
+
+.title-line {
+    display: block;
+    line-height: 1;
+}
+
+.title-line:before, .title-line:after
+{
+    content:'';
+    display: inline-block;
+    width: 67px;
+    height: 2px;
+    background: #403e3e;
+    line-height: 1;
+    vertical-align: middle;
+    margin: 0 20px;
+    text-align: center
+}
+
+.contact-header {
+    text-align: center;
+}
+
+.contact-header img{
+    text-align: center;
+    margin-bottom: 20px
+}
+
+
